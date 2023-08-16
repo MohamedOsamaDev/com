@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/main-logo.png">
+    <title>Mohamedosama.dev</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+    <link rel="stylesheet" href="css/contactform.css">
+</head>
+<body>
+    
+    
+<!--start preloader-->
+<div class="preloader">
+    <div class="loading-bar">
+
+    </div>
+</div>
+<!--END preloader-->
+  
+    <!-- custom cursor -->
+    <div class="cursor " id="cursor">
+       
+     </div>
+     <!-- end custom cursor -->
+     
+   <!--Start contact info-->
+   <div class="main-section">
+    <div class="container">
+        <div class="menu-mobile">
+            
+            <ul>
+                <li><a href="index.html">About Me<i class="fa-solid fa-share "></i></i></a></li>
+                <li><a href="portolio.html">Portofolio<i class="fa-solid fa-share "></i></a></li>
+                <li><a href="Services.html">Services<i class="fa-solid fa-share"></i></a></li>
+                <li><a href="Contact-form.html">Contact me<i class="fa-solid fa-share active"></i></a></li>
+            </ul>
+
+       
+    </div> 
+        <header>
+         
+        <nav id="btn"> 
+           
+           <div class="logo"> <img  class="animtelogo" src="images/Picsart_23-07-20_18-06-15-765.png" alt=""></div>
+          
+            <ul class="menu-all">
+                <li><a href="index.html">About Me</a></li>
+               <li ><a href="portolio.html">Portofolio</a></li>
+               <li><a href="Services.html">Services</a></li>
+               <li class="active"><a href="Contact-form.html">Contact me</a></li>
+            </ul>
+            <span>
+            <img  class="cart-logo" src="images/cart.png" alt="">
+            <span class="btnshow"><i class="fa-solid fa-list"></i></span>
+            <span class="back"> <i class="fa-solid fa-x"></i></span>
+            </span>
+        </nav>
+  
+    </header>
+        <div class="text_box">
+            <h1>Contact Me</h1>
+        </div>
+    </div>      
+</div>
+    <!--End contact info-->
+    
+    
+    <!--start contact-form--->
+    <div class="content-page">
+        <div class="space-contact-info contactsction">
+            <h2 class="middle " >contact info</h2><div class="space"></div>
+         </div>
+    
+       
+    <!--Start contact info-->
+    <div class="contact-info">
+        <div class="container">
+            <div class="boxes">
+                <div class="box">
+                    <h2>Phone</h2>
+                    <p>+201067136331 +201010007883</p>
+                </div>
+                <div class="box">
+                    <h2>Email</h2>
+                    <p>mohamedosama-dev.com</p>
+                </div>
+                <div class="box">
+                    <h2>Address</h2>
+                    <p>Maadi degla, Cairo</p>
+                </div>
+                <div class="box">
+                    <h2>Availability</h2>
+                    <p>I am availble to hiring</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End contact info-->
+    
+    
+     <!--start contact-form--->
+     <div class="discount" id="discount">
+        <div class="image ">
+            <div class="overlay">
+            <div class="content">
+               
+                
+            </div>
+        </div>
+        </div>
+        <div class="form">
+            <div class="content">
+                <h2>Contacts Form</h2>
+                <form action="">
+                    <input class="input" type="text" placeholder="your name" name="name" >
+                    <input class="input" type="email" placeholder="your Email" name="email" >
+                    <input class="input" type="text" placeholder="Your Phone " name="number" >
+                    <textarea class="input"  placeholder="Tell Us About Your Needs " name="message" ></textarea>
+                    <input type="submit" value="send">
+                </form>
+            </div>
+        </div>
+     </div>   
+     <!--end contact-form--->
+</div>
+    <!--end content-->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+          $(document).ready(()=> {
+    setTimeout(() => {
+            $('.preloader').css("display" , "none");
+             $('.animtelogo').addClass('logo-animate');
+           
+    
+        },1000);
+       
+         $(window)[0].addEventListener("scroll", function () {
+
+if ($(window).scrollTop() >= 10 ) {
+
+    $('nav').addClass("activenav");
+}
+else {
+    $('nav').removeClass("activenav");
+};
+
+if ($(window).scrollTop() >= $('.contact-info').offset().top - 600) {
+             $('.middle').addClass("main-tile-animtation");
+         }
+
+ if ($(window).scrollTop() >= $('.discount').offset().top - 500) {
+             $('.overlay').addClass("animtionoverlay");
+         }
+
+
+         });
+        });
+    </script>
+</body>
+</html>

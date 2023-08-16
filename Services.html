@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/main-logo.png">
+    <title>Mohamedosama.dev</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+<!--start preloader-->
+<div class="preloader">
+    <div class="loading-bar">
+
+    </div>
+</div>
+<!--END preloader-->
+  
+    <!-- custom cursor -->
+    <div class="cursor " id="cursor">
+       
+     </div>
+     <!-- end custom cursor -->
+    <!--start main section-->
+
+     <div class="main-section">
+    <div class="container">
+        <div class="menu-mobile">
+            
+            <ul>
+                <li><a href="index.html">About Me<i class="fa-solid fa-share "></i></i></a></li>
+                <li><a href="portolio.html">Portofolio<i class="fa-solid fa-share "></i></a></li>
+                <li><a href="Services.html">Services<i class="fa-solid fa-share active"></i></a></li>
+                <li><a href="Contact-form.html">Contact me<i class="fa-solid fa-share"></i></a></li>
+            </ul>
+
+       
+    </div> 
+        <header>
+         
+        <nav id="btn"> 
+           
+           <div class="logo"> <img  class="animtelogo" src="images/Picsart_23-07-20_18-06-15-765.png" alt=""></div>
+          
+            <ul class="menu-all">
+                <li ><a href="index.html">About Me</a></li>
+               <li ><a href="portolio.html">Portofolio</a></li>
+               <li class="active"><a href="Services.html">Services</a></li>
+               <li><a href="Contact-form.html">Contact me</a></li>
+            </ul>
+            <span>
+            <img  class="cart-logo" src="images/cart.png" alt="">
+            <span class="btnshow"><i class="fa-solid fa-list"></i></span>
+            <span class="back"> <i class="fa-solid fa-x"></i></span>
+            </span>
+        </nav>
+  
+    </header>
+    <div class="text_box">
+        <h1>services</h1>
+    </div>
+  </div>
+
+</div>
+<!--end main section-->
+<!--strat content-->
+<div class="content-services">
+    <div class="pricing " id="PRICING-PLANS" >
+        <div class="main-title"> <h2 >Main Services </h2></div>
+         <div class="container">
+             <div class="box">
+                <h3 class="title"></h3>
+                <img src="images/hosting-basic.png" alt="">
+                <div class="price">
+                  <span class="amountone">UI / UX</span>
+                  <span class="time">10+ projects</span>
+                 </div>
+                 <ul>
+                     <li class="oneli">CUSTOM WEBSITE DESGINS  </li>
+                     
+                 </ul>
+                
+             </div>
+             <div class="box popular">
+               
+                 <div class="title"></div>
+                 <img src="images/hosting-advanced.png" alt="">
+                 <div class="price">
+                   <span class="amountone">WORDPRESS</span>
+                   <span class="time">15+ projects</span>
+                  </div>
+                  <ul>
+                      <li class="oneli">CUSTOM WEBSITE DEVELOPMENT  </li>
+                    
+                  </ul>
+                  
+              </div>
+              <div class="box">
+                 <h3 class="title"></h3>
+                 <img src="images/hosting-professional.png" alt="">
+                 <div class="price">
+                   <span class="amountone">PURE CODE</span>
+                   <span class="time">20+ projects</span>
+                  </div>
+                  <ul>
+                      <li class="oneli">Full-Stack Web Development Solutions</li>
+                     
+                  </ul>
+                  
+              </div>
+               
+         </div>
+     </div>
+    <div class="pricing" id="PRICING-PLANS" >
+       <div class="main-title"> <h2 >support plans</h2></div>
+        <div class="container">
+            <div class="box">
+               <h3 class="title">Basic</h3>
+               <img src="images/hosting-basic.png" alt="">
+               <div class="price">
+                 <span class="amount">$50</span>
+                 <span class="time">per month</span>
+                </div>
+                <ul>
+                    <li>Basic Support </li>
+                    
+                </ul>
+               
+            </div>
+            <div class="box popular">
+              
+                <div class="title">advanced</div>
+                <img src="images/hosting-advanced.png" alt="">
+                <div class="price">
+                  <span class="amount">$75</span>
+                  <span class="time">per month</span>
+                 </div>
+                 <ul>
+                     <li> 12 hours a day  per a month</li>
+                   
+                 </ul>
+                 
+             </div>
+             <div class="box">
+                <h3 class="title">Professional</h3>
+                <img src="images/hosting-professional.png" alt="">
+                <div class="price">
+                  <span class="amount">$120</span>
+                  <span class="time">per month</span>
+                 </div>
+                 <ul>
+                     <li>16 hours a day  per a month</li>
+                    
+                 </ul>
+                 
+             </div>
+              
+        </div>
+    </div>
+</div>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+            $(document).ready(()=> {
+    setTimeout(() => {
+            $('.preloader').css("display" , "none");
+             $('.animtelogo').addClass('logo-animate');
+           
+    
+        },1000);
+       
+         $(window)[0].addEventListener("scroll", function () {
+
+if ($(window).scrollTop() >= 10) {
+
+    $('nav').addClass("activenav");
+}
+else {
+    $('nav').removeClass("activenav");
+};
+
+         });
+        });
+    </script>
+</body>
+</html>

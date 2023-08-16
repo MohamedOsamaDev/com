@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/main-logo.png">
+    <title>Mohamedosama.dev</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+    <link rel="stylesheet" href="css/portoflio.css">
+    
+
+</head>
+<body>  
+<!--start preloader-->
+    <div class="preloader">
+        <div class="loading-bar">
+
+        </div>
+    </div>
+    <!--END preloader-->
+  
+    <!-- custom cursor -->
+    <div class="cursor " id="cursor">
+       
+     </div>
+     <!-- end custom cursor -->
+    
+     <div class="main-section">
+    <div class="container">
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="index.html">About Me<i class="fa-solid fa-share "></i></i></a></li>
+                <li><a href="portolio.html">Portofolio<i class="fa-solid fa-share active"></i></a></li>
+                <li><a href="Services.html">Services<i class="fa-solid fa-share"></i></a></li>
+                <li><a href="Contact-form.html">Contact me<i class="fa-solid fa-share"></i></a></li>
+            </ul>
+
+       
+    </div> 
+        <header>
+         
+        <nav id="btn"> 
+           
+           <div class="logo"> <img  class="animtelogo" src="images/Picsart_23-07-20_18-06-15-765.png" alt=""></div>
+          
+            <ul class="menu-all">
+                <li><a href="index.html">About Me</a></li>
+               <li class="active"><a href="portolio.html">Portofolio</a></li>
+               <li><a href="Services.html">Services</a></li>
+               <li><a href="Contact-form.html">Contact me</a></li>
+            </ul>
+            <span>
+            <img  class="cart-logo" src="images/cart.png" alt="">
+            <span class="btnshow"><i class="fa-solid fa-list"></i></span>
+            <span class="back"> <i class="fa-solid fa-x"></i></span>
+            </span>
+        </nav>
+  
+    </header>
+        <div class="text_box">
+            <h1>Works</h1>
+        </div>
+    </div>      
+</div>
+    <!--end main section-->
+    <!--start content-->
+    <div class="content">
+        <div class="space-main">
+            <div class="space"></div>
+         </div>
+         <!--start box-work-->
+         <div class="box_work">
+            <ul>
+                <li class="Allwork active">All</li>
+                <li class="Wordpresswork">WordPress</li>
+                <li class="purecodework">Pure Code</li>
+                <li class="designWorkDesign">design</li>
+            </ul>
+        </div>
+        <!--end box-work-->
+        <div class="space-main">
+            <div class="space"></div>
+         </div>
+         <!--start works-->
+         <div class="works">
+            <div class="container-work">   
+                <div class="boxes">
+               
+                    <div class="box jslav pureCode">
+                        <div class="imge"><img src="images/lav-copy-1360x1280.png" alt=""></div>
+                        <div class="info">
+                            <h2>La Vitesse</h2>
+                            <p>Pure Code, Selected Work</p>
+                            
+                        </div>
+                    </div>
+                    <div class="box jsgiza  pureCode">
+                        <div class="imge"><img src="images/gsd-copy-1360x1280.png" alt=""></div>
+                        <div class="info">
+                            <h2>Giza Systems Distribution</h2>
+                            <p>Pure Code, Selection Work</p>
+                        </div>
+                    </div>
+                    <div class="box ABCbank wordPress">
+                        <div class="imge"><img src="images/abc-copy-1360x1280.png" alt=""></div>
+                        <div class="info">
+                            <h2>ABC Nursery</h2>
+                            <p>Selection work, WordPress</p>   
+                        </div>
+                    </div>
+                    <div class="box itechbro wordPress">
+                        <div class="imge"><img src="images/itechpro-copy-1360x1280.png" alt=""></div>
+                        <div class="info">
+                            <h2>ItechPro</h2>
+                            <p>Selection work, WordPress</p>
+                        </div>
+                    </div>
+                    <div class="box design ">
+                        <div class="imge"><img src="images/egoth-1360x1360.png" alt=""></div>
+                        <div class="info">
+                            <h2>Egoth Loyalty</h2>
+                            <p>Design, Selection</p>
+                        </div>
+                    </div>
+                    <div class="box design">
+                        <div class="imge"><img src="images/waste-1360x1360.png" alt=""></div>
+                        <div class="info">
+                            <h2>Wastemarche</h2>
+                            <p>Design, Selection</p>
+                        </div>
+                    </div>
+                     
+                </div>
+            </div>
+         </div>
+          <!--Start popup works-->
+    <div class="popup">
+        <div class="card">
+            <span><i class="fa-solid fa-x"></i></span>
+            <div class="image"><img class="popimg" src="" alt=""></div>
+            <div class="info">
+                <p class="jstextp"></p>
+                <h2 class="jstexth"></h2>
+                <a href=""   target="_blank">View project</a>
+            </div>
+        </div>
+    </div>
+    <!--END popup works-->
+         <!--end work-->
+    </div>
+    <!--end content-->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(()=> {
+    setTimeout(() => {
+            $('.preloader').css("display" , "none");
+             $('.animtelogo').addClass('logo-animate');
+           
+    
+        },1000);
+      
+         $(window)[0].addEventListener("scroll", function () {
+
+if ($(window).scrollTop() >= 10 ) {
+
+    $('nav').addClass("activenav");
+}
+else {
+    $('nav').removeClass("activenav");
+};
+
+         });
+        });
+    </script>
+</body>
+</html>
+  
